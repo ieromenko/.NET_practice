@@ -1,17 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-int i = 1;
-int variable = 100;
-for (; i < 33 && variable > 100; i++)
+﻿int[] numbers = { -4, -3, -2, -1, 0, 1, 2, 3, 4 };
+int result = 0;
+foreach (int number in numbers)
 {
-    Console.WriteLine($"i = {i}");
-    Console.WriteLine($"variable = {variable}");
-    variable--;
+    if (number >= 0)
+    {
+        result++;
+    }
 }
-
-for (; variable < 1500; variable = variable + 10)
-{
-    if (variable == 1000)
-        continue;
-
-    Console.WriteLine($"Значение variable в цикле: {variable}");
-}   
+Console.WriteLine($"Число элементов больше нуля: {result}");
