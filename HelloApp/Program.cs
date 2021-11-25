@@ -1,6 +1,29 @@
-﻿int[] numbers = { 1, 2, 3, 4, 5 };
-for (int i = 0; i < numbers.Length; i++)
-{
-    numbers[i] = numbers[i] * 2;
-    Console.WriteLine(numbers[i]);
+﻿{
+
+    int a, b;
+
+    Console.WriteLine("Введите два числа : ");
+
+    a = Convert.ToInt32(Console.ReadLine());
+
+    b = Convert.ToInt32(Console.ReadLine());
+
+    if (a > b)
+
+    {
+
+        Console.WriteLine("{0} наибольшее число", a);
+
+    }
+
+    else
+
+    {
+
+        Console.WriteLine("{0} наибольшее число ", b);
+
+    }
+
+    Console.ReadLine();
+
 }
