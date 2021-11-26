@@ -2,11 +2,11 @@
 
 // сортировка
 int temp;
-for (int i = 0; i < nums.Length - 1; i++)
+for (int i = 0; i < nums.Length - 1; i++)//Если эл 
 {
-    for (int j = i + 1; j < nums.Length; j++)
+    for (int j = i + 1; j < nums.Length; j++)//нач со сл элемента сравнив с элементом со внеш цикла
     {
-        if (nums[i] > nums[j])
+        if (nums[i] > nums[j])//Если элемент с меньшим индексом больше элемента с большим индексом, то меняем элементы местами.
         {
             temp = nums[i];
             nums[i] = nums[j];
