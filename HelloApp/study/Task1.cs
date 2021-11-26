@@ -2,7 +2,7 @@
 {
     public class Task1
     {
-        public void Do()
+        public static void Do()
         {
             int a, b;
 

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HelloApp.study
 {
-    internal class task2
+    internal class Task2
     {
-        static void Main(string[] args)
+        public static void Do ()
         {
             Console.WriteLine("Введите число: ");
             int num1 = Convert.ToInt32(Console.ReadLine());
