@@ -1,37 +1,23 @@
-﻿namespace HelloApp
+﻿int[] nums = { 54, 7, -41, 2, 4, 2, 89, 33, -5, 12 };
+
+// сортировка
+int temp;
+for (int i = 0; i < nums.Length - 1; i++)
 {
-    public class Task7
+    for (int j = i + 1; j < nums.Length; j++)
     {
-        public static void Do()
-
+        if (nums[i] > nums[j])
         {
-            Console.WriteLine("Введите числа: ");
-            string[] num = Console.ReadLine().Split(',');
-            {
-                string i = 0;
-                string a = 0;
-
-                for ( ; i < num.lenght; i++) ;
-                {
-                    for ( ; a < num.lenght; i++) ;
-                    {
-                        if (a == i)
-
-                            continue;
-                    }
-
-                    {  if (num[i] == num[a])
-                    
-                        Console.WriteLine($"{num[1]},");
-                    }
-                }
-
-
-
-            }
+            temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
         }
     }
 }
 
-
-           
+// вывод
+Console.WriteLine("Вывод отсортированного массива");
+for (int i = 0; i < nums.Length; i++)
+{
+    Console.WriteLine(nums[i]);
+}
