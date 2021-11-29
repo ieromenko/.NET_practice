@@ -2,32 +2,32 @@
 {
     public class Task7
     {
-        public static void Do()
+        public static void Main()
 
         {
             Console.WriteLine("Введите числа: ");
             string[] num = Console.ReadLine().Split(',');
-                                   
-            for (string i = "0"; i < num.Length; i++) 
-            {
-                for (string a = "0"; a < num.Length; a++)
+            Dictionary<string, int> symbols = new Dictionary<string, int>();
                 
-                    if (a == i) //исключают сравнения самих с собой
+                for (var a = 0; a < num.Length; a++)
+                {
+                    if (symbols.Keys.Contains(num[a])) //поиск 2 одинаковых значений
                     {
-                        continue;
+                        symbols[num[a]] = symbols[num[a]] + 1;
                     }
-
-                    if (num[i] == num[a]) //поиск 2 одинаковых значений
+                    else
                     {
-                        
+                        symbols.Add(num[a], 1);
                     }
                 }
-                Console.WriteLine($"{num[i]},")
+
+            foreach (string s in symbols.Keys)
+            {
+                Console.WriteLine($"Символ:{s} Кол-во вхождений:{symbols[s]}");
             }
-
-
         }
     }
+}
 
 
 

@@ -1,34 +1,34 @@
-﻿namespace HelloApp
-{
-    public class Task1
-    {
-        public static void Do()
-        {
-            int a, b;
+﻿//namespace HelloApp
+//{
+//    public class Task1
+//    {
+//        public static void Do()
+//        {
+//            int a, b;
 
-            Console.WriteLine("Введите два числа : ");
+//            Console.WriteLine("Введите два числа : ");
 
-            a = Convert.ToInt32(Console.ReadLine());
+//            a = Convert.ToInt32(Console.ReadLine());
 
-            b = Convert.ToInt32(Console.ReadLine());
+//            b = Convert.ToInt32(Console.ReadLine());
 
-            if (a > b)
+//            if (a > b)
 
-            {
+//            {
 
-                Console.WriteLine("{0} наибольшее число", a);
+//                Console.WriteLine("{0} наибольшее число", a);
 
-            }
+//            }
 
-            else
+//            else
 
-            {
+//            {
 
-                Console.WriteLine("{0} наибольшее число ", b);
+//                Console.WriteLine("{0} наибольшее число ", b);
 
-            }
+//            }
 
-            Console.ReadLine();
-        }
-    }
-}
+//            Console.ReadLine();
+//        }
+//    }
+//}
